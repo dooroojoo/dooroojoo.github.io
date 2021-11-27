@@ -240,10 +240,10 @@ footer {
 }
 
 .project-image{
-    align-items: center;
-    width: 450px;
+    align-content: center;
+    width: 650px;
     padding-bottom: 5%;
-    margin-left: 30%;
+    margin-left: 32%;
 }
 
 .coments{
