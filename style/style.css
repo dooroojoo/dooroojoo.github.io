@@ -231,7 +231,7 @@ footer {
 
 
 .interesting{
-    min-height: 100vh;
+    width: 900px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -239,7 +239,15 @@ footer {
 }
 
 .container{
-    width: 600px;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.project-image{
+    width: 450px;
 }
 
 .coments{
@@ -248,11 +256,6 @@ footer {
     padding-top: 5%;
     padding-bottom: 5%;
     font-family: 'Noto Sans KR', sans-serif;
-    width: 100%;
-}
-
-.img{
-    width: 200px;
 }
 
 /* 컨텐츠와 푸터 사이 공백 */
