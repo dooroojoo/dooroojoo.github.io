@@ -231,19 +231,12 @@ footer {
 
 
 .interesting{
-    width: 900px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
+    width: 100%;
+    display: block;
 }
 
 .container{
-    width: 900px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
+    display: block;
 }
 
 .project-image{
@@ -256,6 +249,7 @@ footer {
     padding-top: 5%;
     padding-bottom: 5%;
     font-family: 'Noto Sans KR', sans-serif;
+    display: block;
 }
 
 /* 컨텐츠와 푸터 사이 공백 */
