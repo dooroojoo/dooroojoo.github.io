@@ -229,11 +229,30 @@ footer {
 
 /* ------------- 서브페이지 ------------*/
 
+
+.interesting{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.container{
+    width: 600px;
+}
+
 .coments{
     font-size: 15px;
     text-align: center;
     padding-top: 5%;
+    padding-bottom: 5%;
     font-family: 'Noto Sans KR', sans-serif;
+    width: 100%;
+}
+
+.img{
+    width: 200px;
 }
 
 /* 컨텐츠와 푸터 사이 공백 */
@@ -280,26 +299,5 @@ footer {
         margin-top: 5%;
         display: inline-block;
         text-align: center;
-    }
-
-    .book-text {
-        margin-top: auto;
-    }
-
-    .coffee-text {
-        margin-left: 20%;
-        height: 100%;
-
-    }
-    .coffee-title {
-        margin-top: auto;
-    }
-
-    .mbti-content {
-        margin-left: 20%;
-    }
-    
-    .intj {
-        margin-top:5%;
     }
 }
