@@ -2,63 +2,401 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <title>minju's portfolio</title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta name="description" content="MINJU PORTFOLIO">
+    <meta name="keywords" content="개발자, 포트폴리오, 백엔드">
+    <title>MINJU PORTFOLIO</title>
 
-    <!-- 외부 스타일시트 -->
-    <link href="https://dooroojoo.github.io/style/style.css" rel="stylesheet">
-    <!-- 파비콘 -->
-    <link rel="icon" type="image/x-icon" href="https://dooroojoo.github.io/image/favicon.png">
+    <!-- CSS 연결 -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/font-awesome.css">
+
     <!-- 웹폰트 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-   
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,800;0,900;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 <body>
-<div id="main" class="bg">
-    <div id="video">
-        <video id="videobg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
-        <source src="https://dooroojoo.github.io/image/bgmv.mp4" type="video/mp4">
-        <source src="movie.webm" type="video/webm">
-    </video>
-    <!-- 헤더 -->
-    <header class="main-header page">
-        
-        <a href="https://dooroojoo.github.io/index.html">
-        <h3 class="title">welcome! minju's portfolio♥</h3></a>
-        <nav>
-            <ul class="main-nav">
-                <li class="l1"><a href="https://dooroojoo.github.io/index.html">main</a></li>
-                <li class="l2"><a href="https://dooroojoo.github.io/profile.html">profile</a></li>
-                <li class="l3"><a href="https://dooroojoo.github.io/sub.html">project</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- 
+         현재 포트폴리오 사이트는
+         https://github.com/webstoryboy/portfolio 출처의 'IZZY PORTFOLIO'
+         오픈소스를 활용하여 수정한 사이트입니다.
+    -->
+
+<!-- loding -->
+<div class="progress" id="progress">
+    <div class="progress_css">
+        <div class="wrapper">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-1a"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+        </div>
+    </div>
+    <p>LOADING…</p>
+    <span class="progress-text">0</span>
+</div>
+<!-- //loding -->
+
+<!-- header -->
+<header id="header">
+    <div class="container">
+        <div class="header">
+            <div class="gnb_left">
+                <ul class="menu1">
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#skill">SKILL</a></li>
+                </ul>
+            </div>
+            <a href="#none" class="logo">
+                <img src="./assets/img/logo.png" alt="minju">
+            </a>
+            <div class="gnb_right">
+                <ul class="menu2">
+                    <li><a href="#work1">WORK</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- //header -->
+
+
+<!-- contents -->
+<div id="contents">
+
+    <!-- main -->
+    <div id="main">
+        <div class="container">
+            <div class="main">
+                <h1 aria-label="minju.portfolio">
+                    <em>
+                    <span aria-hidden="true">m</span>
+                    <span aria-hidden="true">i</span>
+                    <span aria-hidden="true">n</span>
+                    <span aria-hidden="true">j</span>
+                    <span aria-hidden="true">u</span>
+                    </em>
+                    <span aria-hidden="true">P</span>
+                    <span aria-hidden="true">o</span>
+                    <span aria-hidden="true">r</span>
+                    <span aria-hidden="true">t</span>
+                    <span aria-hidden="true">f</span>
+                    <span aria-hidden="true">o</span>
+                    <span aria-hidden="true">l</span>
+                    <span aria-hidden="true">i</span>
+                    <span aria-hidden="true">o</span>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="about">
+                <div class="about_left">
+                    <div class="left_col1">
+                        <div class="box">
+
+                            <img src="./assets/img/profile2.jpg" alt="프로필사진" class="about_img1">
+                       
+                            <div class="about_img"></div>
+                            <p class="p1">
+                                I LOVE IT<br>
+                                'NEW THING'
+                                
+                            </p>
+                            <p class="p2">
+                               RIGHT NOW<br>
+                               ANOTHER<br>
+                               START
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about_right">
+                    <h2 class="h2">ABOUT<em class="h2_em">ME</em></h2>
+                    <div class="right_col1">
+                        <p>
+                           '간혹 마주치는 개발자들의 코드를 보면, 저는 까막눈이 된 기분이었습니다.'<br>
+                            디자인, 마케팅 관련 업무를 경험하면서 개발자와 소통하는 일이 종종 있었습니다. 그분들의 모니터 안은 제가 알아보지 못하는 언어들로 가득했습니다. 호기심이 많은 성격이다 보니 직접 코드를 수정하고 개발하고 싶다는 생각이 들었습니다. 저는 멈추어 있지 않고 항상 변화하는 사람입니다. 그래서 개발 공부를 시작하였고, 늘 새로운 것을 배우는 즐거움을 느끼고 있습니다. 개발자는 끊임없이 공부하고 발전해가는 직업이라고 생각합니다. 제가 노력하는 만큼 성장할 수 있다고 믿으며, 앞으로 실력 있는 개발자가 되기 위해 성실하게 배우고 나아가겠습니다.
+                        </p>
+                        <p>
+                            <b style="font-size: 18px; ">[ EDUCATION & LICENSE ] </b><br>2021.06.23 ~ 2022.01.24 🎓 KH정보교육원 🎓 UI/UX 스마트 콘텐츠 웹기반 융합 응용SW개발자 양성 과정 수료중
+                            <br>2021.10 🎓 SQL 개발자 (SQLD) 자격증 취득
+                        </p>
+                        <span><a href="#skill" class="hover">SCROLL TO EXPLORE<i class="fa fa-angle-down" aria-hidden="true"></i></a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 중간배너 -->
+    <div class="bar">
+        <span>MINJU PORTFOLIO&nbsp;</span>
+        <span>MINJU PORTFOLIO&nbsp;</span>
+        <span>MINJU PORTFOLIO&nbsp;</span>
+        <span>MINJU PORTFOLIO&nbsp;</span>
+        <span>MINJU PORTFOLIO&nbsp;</span>
+    </div>
+
+    <!-- skill -->
+    <div id="skill">
+        <div class="container">
+            <div class="row">
+                <div class="skill">
+                    <div class="skill_tit">
+                        <h2 class="h2"><em class="h2_em">MY&nbsp;</em>SKILL TREE</h2>
+                    </div>
+                    <div class="ability">
+                        <div class="box1">
+                            <h3>Ability</h3>
+                            <h4>JAVA</h4>
+                            <p>
+                            JAVA의 기본 문법과 객체지향에 대해 숙지하고 있으며, JAVA를 활용하여 웹 애플리케이션을 개발할 수 있습니다.
+                            </p>
+                            <h4>HTML5/CSS3</h4>
+                            <p>
+                            웹 표준성과 호환성에 따라 기본적인 웹 브라우저 디자인을 구현할 수 있습니다.
+                            </p>
+                            <h4>JQUERY ･ JAVASCRIPT</h4>
+                            <p>
+                            동적인 화면을 구현하기 위해 기본적인 스크립트를 작성할 수 있습니다.
+                            JQUERY를 활용한 AJAX, OPEN API 사용이 가능합니다.
+                            </p>
+                            <h4>ORACLE SQL</h4>
+                            <p>
+                            ORACLE DBMS와 SQL언어를 사용하여 데이터베이스를 활용 및 관리할 수 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="keyword">
+                        <div class="box2">
+                            <h3>FRAMEWORK</h3>
+                            <h4>MYBATIS</h4>
+                            <p>
+                            XML CONFIG, JAVA CONFIG 두 가지 방식으로 설정 및 사용가능합니다.<br><br>
+                            </p>
+                            <h4>SPRING</h4>
+                            <p>
+                            IoC, DI, 추상화, AOP 등 주요 개념에 대해 알고 있으며, 필요한 라이브러리를 사용할 수 있습니다.
+                            </p>
+                            <h4>SPRING BOOT</h4>
+                            <p>
+                            스프링부트의 환경 설정을 할 수 있고, 웹 개발을 할 수 있습니다. 스프링부트를 사용하여 파이널 프로젝트를 진행하였습니다.
+                            </p>
+                            <h2>Communication</h2>
+                            <p>
+                            세 번의 팀프로젝트 경험으로, 팀원들과의 원활한 커뮤니케이션과 협동심이 가장 중요하다는 것을 알고 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- work1 - 사이트1 -->
+    <div id="work1">
+        <div class="container">
+            <div class="row">
+                <div class="work1">
+                    <div class="work1_top">
+                        <h2 class="h2">project<em class="h2_em"> 01</em> </h2>
+                        <p>MINI <em>PROJECT</em></p>
+                    </div>
+                    <div class="work1_left">
+                        <div class="left1">
+                            <p class="site_tit1">PARKING PRO</p>
+                            <ol>
+                                <li>Category</li>
+                                <li>JAVA SWING CONSOLE</li>
+
+                                <li>Tool&Tech</li>
+                                <li>Eclips(JAVA)<br>Kakao Oven<br>Notion</li>
+                            
+                                <li>Date</li>
+                                <li>2021.08.08</li>
+
+                                <li>Role</li>
+                                <li>주차 조회 페이지</li>
+                            </ol>
+                        </div>
+                        <div class="left2">
+                            <h4 class="site_tit2">프로젝트 소개</h4>
+                            <p class="text">
+                                주차장의 키오스크 정산 시스템 프로그램을 구현하여 입차, 출차, 정산, 위치조회가 가능하도록 하였다.
+                                수업 시간에 배운 JAVA SWING 기능을 활용하여 프로그램을 구현하고자 하였으며,
+                                주변에서 가장 쉽게 만날 수 있는 키오스크를 주제로 간편하게 관리되는 주차 정산 시스템을 기획하였다.
+                            </p>
+                            <a href="https://github.com/dooroojoo/MiniProject" class="thar-one hover" target="_blank">Project view</a>
+                        </div>
+                </div>
+                    <div class="work1_right">
+                        <img src="./assets/img/project1.png" alt="미니프로젝트">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- work2 - 사이트2 -->
+    <div id="work2">
+        <div class="container">
+            <div class="row">
+                <div class="work2">
+                    <div class="work2_top">
+                        <h2 class="h2">project<em class="h2_em"> 02</em> </h2>
+                        <p>SEMI <em>PROJECT</em></p>
+                    </div>
+                    <div class="work2_left">
+                        <p class="site_tit1">SOCIAL DINING</p>
+                        <ol>
+                            <li>Category</li>
+                            <li>SERVLET+JSP</li>
+
+                            <li>Date</li>
+                            <li>2021.11.17</li>
+
+                            <li>Role</li>
+                            <li>로그인<br>계정,비밀번호찾기<br>장바구니,결제<br>관리자-정산내역조회</li>
+                        </ol>
+                        <h4 class="site_tit2">프로젝트 소개</h4>
+                        <p>
+                            비대면 일상에 지친 사람들을 위해 오프라인 소모임(소셜링)과 원데이,VOD 클래스를 통하여 취향이 맞는 사람들과 소통하고,
+                            반복되는 일상을 새로운 경험들로 채워가는 즐거움을 함께 공유하고자 하는 의도로 사이트를 구현하였습니다.
+                        </p>
+                        <a href="https://github.com/dooroojoo/semiproject_fork" class="btn3 thar-one hover" target="_blank">Project view</a>
+                    </div>
+                    <div class="work2_right">
+                        <img src="./assets/img/project2.jpg" alt="웹표준 사이트">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- work3 - 사이트3 -->
+    <div id="work3">
+        <div class="container">
+            <div class="row">
+                <div class="work3">
+                    <div class="work3_top">
+                        <h2 class="h2">project<em class="h2_em"> 03</em> </h2>
+                        <p>FINAL <em>PROJECT</em></p>
+                    </div>
+                    <div class="work3_left">
+                        <div class="left1">
+                            <p class="site_tit1">CAMPERS (현재 개발 진행중)</p>
+                            <ol>
+                                <li>Category</li>
+                                <li>Spring boot</li>
+
+                                <li>Date</li>
+                                <li>2022.01.24</li>
+
+                                <li>Role</li>
+                                <li>메인 페이지<br>캠핑장 검색<br>고객센터</li>
+                            </ol>
+                        </div>
+                        <div class="left2">
+                            <h4 class="site_tit2">프로젝트 소개</h4>
+                            <p class="text">
+                                캠핑장 정보, 후기, 커뮤니티, 예약, 결제 서비스를 제공하는 사이트들이 분산되어 있어
+                                사용자의 편의성이 떨어진다는 분석으로, 
+                                캠핑장 서비스를 통합적으로 제공하는 원스톱 플랫폼을 구축하고자 기획하여 구현중에 있습니다.
+                            </p>
+                            <a href="#" class="thar-one hover" target="_blank">Project view</a>
+                        </div>
+
+                </div>
+                    <div class="work3_right">
+                        <img src="./assets/img/project3.png" alt="메가박스 사이트">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- work4 - 사이트4 -->
+    <div id="work4">
+        <div class="container">
+            <div class="row">
+                
+            </div>
+        </div>
+    </div>
     
-<!-- 콘텐츠 -->
-<div class="main-content page">
-    <h1>Hey,<br>
-        I'm Kim Minju!<br>
-    </h1>
-<p>
-    반갑습니다!<br>
-    웹개발자가 되기 위해<br>
-    열심히 공부중인<br>
-    김민주입니다.
-</p>
-</div>
-</div>
+    <!-- work5 - 사이트5 -->
+    <div id="work5">
+        <div class="container">
+         <div class="row">
+            
+            </div>
+        </div>
+    </div>
+
+    <!-- work6 - css 애니메이션 삭제 -->
+    <div id="work6">
+    </div>
+
+    <div class="bar">
+        <span>JUNIOR BACKEND PROGRAMMING DEVELOPER MINJU PORTFOLIO JUNIOR BACKEND PROGRAMMING DEVELOPER MINJU PORTFOLIO JUNIOR BACKEND PROGRAMMING DEVELOPER MINJU PORTFOLIO JUNIOR BACKEND PROGRAMMING DEVELOPER MINJU PORTFOLIO</span>
+    </div>
+
+<!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact">
+                    <div class="left">
+                        <h2 class="h2"><em class="h2_em">CONTACT</em> ME</h2>
+                        
+                    </div>
+                    <div class="right">
+                        <span><a href="mailto:dooroojoo@kakao.com" class="btn btn2"><img src="./assets/img/email.png" style="width: 50px;"></a></span> 
+                       <span><a href="https://github.com/dooroojoo" class="btn btn2"><img src="./assets/img/github.png" style="width: 50px;"></a></span> 
+                       <span> <a href="https://blog.naver.com/PostList.naver?blogId=814617&from=postList&categoryNo=11&parentCategoryNo=11"><img src="./assets/img/blog.png" style="width: 50px;"></a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 </div>
+</main>
+<!-- //contents -->
+<!-- footer -->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer">
+                <p class="footer_p1">THANK YOU!</p>
+                <p class="footer_p2">본 사이트는 상업적 목적이 없는 개인 포트폴리오 사이트 입니다 구글 크롬 브라우저에 최적화 되었습니다</p>
+                <address> https://github.com/webstoryboy/portfolio 'IZZY PORTFOLIO' 오픈소스의 도움으로 제작하였습니다.</address>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- //footer -->
 
 
 
+<!-- script -->
+<script src="assets/js/jquery.min_1.12.4.js"></script>
+<script src="assets/js/easypiechart.min.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/skrollr.min.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
